@@ -75,8 +75,8 @@ button {
 .logo-menu__call,
 .logo-menu__chat,
 .logo-menu__profile,
-.logo-menu__repair-span,
-.logo-menu__check-span
+.content__repair-span,
+.content__check-span
 {
         display: none;
     }
@@ -261,8 +261,8 @@ button {
         display: none;
     }
 
-    .logo-menu__repair, .logo-menu__repair-span,
-    .logo-menu__check, .logo-menu__check-span{
+    .content__button-repair, .content__repair-span,
+    .content__button-check, .content__check-span{
         display: flex;
     }
 
@@ -284,12 +284,12 @@ button {
         display: flex;
     }
 
-    .logo-menu__check{
+    .content__button-check{
         margin-left: 32px;
 
     }
 
-    .logo-menu__check-span, .logo-menu__repair-span{
+    .content__check-span, .content__repair-span{
         margin-right: 8px;
         margin-top: 10px;
     }
