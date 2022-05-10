@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url("fonts/TTLakes-Regular.eot");
+    src: local("../fonts/TT Lakes Regular"), local('../fonts/TTLakes-Regular'),
+    url("fonts/TTLakes-Regular.eot?#iefix") format('embedded-opentype'),
+    url("fonts/TTLakes-Regular.woff") format('woff'),
+    url("fonts/TTLakes-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url("fonts/TTLakes-Bold.eot");
+    src: local("/fonts/TT Lakes Bold"), local('../fonts/TTLakes-Bold'),
+    url("fonts/TTLakes-Bold.eot?#iefix") format('embedded-opentype'),
+    url("fonts/TTLakes-Bold.woff") format('woff'),
+    url("/fonts/TTLakes-Bold.ttf") format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url("fonts/TTLakes-Medium.eot");
+    src: local("/fonts/TT Lakes Medium"), local('../fonts/TTLakes-Medium'),
+    url("fonts/TTLakes-Medium.eot?#iefix") format('embedded-opentype'),
+    url("fonts/TTLakes-Medium.woff") format('woff'),
+    url("/fonts/TTLakes-Medium.ttf") format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: "TT Lakes",sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #7E7E82;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+li{
+    font-weight: 500;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.logo-menu__call,
+.logo-menu__chat,
+.logo-menu__profile,
+.logo-menu__repair-span,
+.logo-menu__check-span
+{
+        display: none;
+    }
+
+.logo-menu__cps-logo::after{
+    content: "";
+    height: 32px;
+    width: 2px;
+    background-color:#EAEAEA;
+    display:inline-block;
+    margin-left: 12px;
+    margin-right: 4px;
+    margin-top: 4px;
+}
+
+.header__logo-menu{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 16px 17px 16px;
+
+}
+
+.content{
+    background-color: #f8f8f8;
+}
+
+.content__services{
+    overflow: scroll;
+}
+
+.services__list-items:hover{
+    outline: 2px solid #B8FFEC;
+    border-radius: 5px 5px;
+}
+
+.services__list-items{
+    padding: 10px;
+    white-space: nowrap;
+    margin-left: 15px;
+
+}
+
+.services__list{
+    height: 40px;
+    margin: 24px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.content__button-text{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 16px 0 16px;
+}
+
+.content__button{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.content__title{
+    padding-top: 24px;
+    margin-left: 16px;
+    position: relative;
+}
+
+.content__moving-buttons{
+    display: none;
+}
+
+.content__title::before {
+    content: "";
+    position: absolute;
+    top: 37%;
+    left: -16px;
+    width: 4px;
+    height: 40px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #41F6D7;
+}
+
+.content__text--part-one{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    margin-left: 16px;
+}
+
+.content__text--part-two, .content__text--part-three{
+    display: none;
+}
+
+.content__cps-logo{
+
+    width: 320px;
+    height: 176px;
+}
+
+@media screen and (min-width: 768px) {
+    .logo-menu__call, .logo-menu__chat,
+    .logo-menu__profile, .logo-menu__item
+    {
+        display: block;
+    }
+
+    .logo-menu__cps-logo{
+        margin-right: 180px;
+    }
+
+    .logo-menu__cps-logo::after {visibility: hidden;}
+
+    .logo-menu__burger::after,
+    .logo-menu__profile::after
+    {
+        content: "";
+        height: 32px;
+        width: 2px;
+        background-color:#EAEAEA;
+        display:inline-block;
+        margin-left: 20px;
+        margin-right: 4px;
+        margin-top: 4px;
+    }
+
+    .content__total{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .content__text--part-one{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-right: 50px;
+        margin-top: -15px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+
+    }
+
+    .content__text--part-two{
+        margin-top: 30px;
+        display: block;
+    }
+
+    .content__image{
+        width: 360px;
+        height: 208px;
+        margin-right: 25px;
+        margin-top: 1px;
+
+    }
+
+    .content__cps-logo{
+        border-radius: 7px;
+    }
+
+    .content__button-text{
+        margin: 10px;
+    }
+
+}
+
+
+@media screen and (min-width: 1120px){
+
+
+
+    .header__logo-menu{
+        display: none;
+    }
+
+    .logo-menu__repair, .logo-menu__repair-span,
+    .logo-menu__check, .logo-menu__check-span{
+        display: flex;
+    }
+
+    .content{
+        background-color: #F8F8F8;
+        height: 535px;
+        width: inherit;
+    }
+
+    .content__title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 3%;
+    }
+
+
+    .content__moving-buttons{
+        display: flex;
+    }
+
+    .logo-menu__check{
+        margin-left: 32px;
+
+    }
+
+    .logo-menu__check-span, .logo-menu__repair-span{
+        margin-right: 8px;
+        margin-top: 10px;
+    }
+
+    .content__services{
+        height: 110px;
+    }
+
+    .services__list{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .content__total{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .content__image{
+        width: 80%;
+        height: 80%;
+    }
+    .content__cps-logo{
+        width: 100%;
+        height: 100%;
+        border-radius: 7px;
+    }
+
+    .content__text--part-two, .content__text--part-three{
+        display: block;
+    }
+}
