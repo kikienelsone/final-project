@@ -185,6 +185,7 @@ button {
     min-height: 176px;
     height: 40vw;
     margin-right: 20px;
+    margin-left: 20px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
