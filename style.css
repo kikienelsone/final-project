@@ -97,7 +97,7 @@ button {
 .header__logo-menu{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 18px 16px 17px 16px;
 
