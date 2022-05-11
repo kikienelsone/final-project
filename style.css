@@ -41,6 +41,7 @@ li{
 
 body{
     font-family: "TT Lakes",sans-serif;
+
 }
 
 a{
@@ -188,6 +189,8 @@ button {
     background-position: center;
 }
 
+
+
 @media screen and (min-width: 768px) {
     .logo-menu__call, .logo-menu__chat,
     .logo-menu__profile, .logo-menu__item
@@ -281,6 +284,7 @@ button {
         justify-content: space-between;
         align-items: center;
         margin-right: 3%;
+        height: 150px;
     }
 
 
@@ -310,7 +314,6 @@ button {
 
     .services__list-items:last-child{
         flex-basis: 100%;
-        
     }
 
     .content__total{
