@@ -42,6 +42,7 @@ li{
 body{
     font-family: "TT Lakes",sans-serif;
 
+
 }
 
 a{
@@ -94,7 +95,6 @@ button {
 }
 
 .header__logo-menu{
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -105,6 +105,7 @@ button {
 
 .content{
     background-color: #f8f8f8;
+
 
 }
 
@@ -126,7 +127,7 @@ button {
 
 .services__list{
     height: 40px;
-    margin: 24px 30px 0 0;
+    margin: 24px 30px 24px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -270,13 +271,11 @@ button {
     .content__button-check, .content__check-span{
         display: flex;
     }
-
-
-
     .content{
         background-color: #F8F8F8;
-        height: 535px;
+        height: 600px;
         width: inherit;
+        margin-top: -40px;
     }
 
     .content__title{
@@ -286,6 +285,10 @@ button {
         margin-right: 3%;
         height: 150px;
 
+    }
+
+    .content__title--name, .content__moving-buttons{
+        margin-top: -20px;
     }
 
     .content__services{
@@ -309,6 +312,7 @@ button {
 
     .content__services{
         height: 110px;
+        margin-top: -20px;
     }
 
     .services__list{
