@@ -43,9 +43,6 @@ body {
     font-family: "TT Lakes", sans-serif;
 }
 
-.container{
-    margin-left: 160px;
-}
 
 
 
@@ -267,6 +264,11 @@ button {
 
 
 @media screen and (min-width: 1120px){
+
+    body{
+        margin-left: 160px;
+    }
+
 
     .header__logo-menu{
         display: none;
