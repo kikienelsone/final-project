@@ -39,12 +39,15 @@ li{
     list-style: none;
 }
 
-body{
-    font-family: "TT Lakes",sans-serif;
-    margin-left: 160px;
-
-
+body {
+    font-family: "TT Lakes", sans-serif;
 }
+
+.container{
+    margin-left: 160px;
+}
+
+
 
 a{
     text-decoration: none;
