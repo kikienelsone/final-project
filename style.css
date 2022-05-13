@@ -101,10 +101,68 @@ button {
 
 }
 
+@keyframes animation {
+    to{
+        transform: scale(1.1);
+    }
+}
+
+.logo-menu__burger:hover{
+    filter: saturate(200%) ;
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+.logo-menu__call:hover{
+    filter: saturate(200%) ;
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.logo-menu__chat:hover{
+    filter: saturate(200%) ;
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+.logo-menu__profile:hover{
+    filter: saturate(200%) ;
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+.content__button-repair:hover{
+    filter: saturate(200%) ;
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+.content__button-check:hover{
+    filter: saturate(200%) ;
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+
 .content{
     background-color: #f8f8f8;
-
-
 }
 
 .content__services{
@@ -114,6 +172,10 @@ button {
 .services__list-items:hover{
     outline: 2px solid #B8FFEC;
     border-radius: 5px 5px;
+    box-shadow: 0 0 18px 2px rgba(34, 60, 80, 0.1);
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
 .services__list-items{
@@ -122,6 +184,8 @@ button {
     margin-left: 15px;
 
 }
+
+
 
 .services__list{
     height: 40px;
