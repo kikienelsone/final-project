@@ -185,8 +185,6 @@ button {
 
 }
 
-
-
 .services__list{
     height: 40px;
     margin: 24px 30px 24px 0;
@@ -381,16 +379,18 @@ button {
 
     .services__list{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-
-
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        margin-right: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        overflow: scroll;
     }
 
-    .services__list-items:last-child{
-        flex-basis: 10%;
+    /*.services__list-items:last-child{*/
+    /*    flex-basis: 10%;*/
 
-    }
+    /*}*/
 
     .content__total{
         display: flex;
@@ -414,5 +414,27 @@ button {
     }
 
     }
+
+@media screen and (min-width: 1400px){
+    .services__list{
+        display: flex;
+        flex-direction: row;
+        height: 80px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-basis: 20%;
+        overflow:hidden;
+        margin: 0;
+
+    }
+    .services__list-link:last-child{
+        flex-basis: 100%;
+    }
+
+}
+
+
+
+
 
 
